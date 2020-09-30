@@ -1,10 +1,12 @@
-
+<!--DConsumindo API no PHP com file_get_contents -->
 <!DOCTYPE html>
+
+
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DConsumindo API no PHP com file_get_contents</title>
+    <title>Consumindo API no PHP com file_get_contents</title>
 </head>
 <body>
     <?php
