@@ -1,5 +1,5 @@
 <?php
-
+/*https://www.youtube.com/watch?v=nQ6R-tKgZGk&ab_channel=CanalTI link vídeo*/
 $url = "https://www.canalti.com.br/api/pokemons.json";
 $pokemons = file_get_contents($url);
 echo "<pre>";
