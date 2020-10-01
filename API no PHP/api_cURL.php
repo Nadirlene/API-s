@@ -11,9 +11,22 @@
     $ch = curl_init($url); //inicializa o cURL
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
     $resultado = json_decode(curl_exec($ch));
 
-    var_dump($resultado);
+    #var_dump($resultado);
+
+    foreach ($resultado->results as $ator) {
+        #var_dump($ator);
+        echo "Ator: " . $ator->name . "</br>";
+        echo "Altura: " . $ator->height . "cm</br>";
+
+        foreach ($ator->films as $filme) {
+            echo "Filme: " . $filme . "</br>";
+        }
+
+        echo "<hr>";
+    }
     ?>
 </body>
 </html>
